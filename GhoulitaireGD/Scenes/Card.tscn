@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Sprites/Cards/empty.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/Cards/back.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Card.gd" type="Script" id=3]
+
+[node name="Card0" type="TextureRect"]
+margin_right = 16.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 16, 16 )
+mouse_filter = 0
+texture = ExtResource( 1 )
+expand = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Suit" type="TextureRect" parent="."]
+margin_left = 6.0
+margin_top = 9.0
+margin_right = 10.0
+margin_bottom = 13.0
+rect_min_size = Vector2( 4, 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="TextureRect" parent="."]
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 7.0
+margin_bottom = 6.0
+rect_min_size = Vector2( 4, 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="TextureRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 1.0
+margin_right = -2.0
+margin_bottom = -1.0
+texture = ExtResource( 2 )
+
+[connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]

@@ -1,0 +1,27 @@
+[
+    [
+        {
+            "Name": "YOU",
+            "Message": "Where am I...?"
+        },
+        {
+            "Name": "YOU",
+            "Message": "I can't seem to remember anything..."
+        },
+        {
+            "Name": "YOU",
+            "Message": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
+        }
+    ],
+
+    [
+        {
+            "Name": "YOU",
+            "Message": "Am I in... a castle?"
+        },
+        {
+            "Name": "YOU",
+            "Message": "Am I from here?"
+        }
+    ]
+]
