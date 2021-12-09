@@ -1,1 +1,5 @@
 # Ghoulitaire Godot Project
+
+This is the collection of all the current project files for Ghoulitaire. Some are currently useless with the current build, such as the overworld scene, dialogue manager script, and dialogue JSON files. This is because I haven't decided if I want an overworld in the final draft or as a simple themed solitaire app. We'll see! I've changed the display ratio to be 9:16 right now, to test out if I enjoy the mobile app idea, but it'd be an easy fix to change it back to 16:9 as all the UI elements scale automatically fairly well.
+
+I'd like to add a save feature so when the app is closed, no game data is lost, as well as other data for the player, hence why I've kept the JSON directory even though I'm not currently using it. The easiest way I've found to store data for smaller games is either as a JSON or text file. With the lists being used in-game to hold deck information, I think JSON makes the most sense as of now. Plus, Godot makes it fairly easy to work with JSON.
